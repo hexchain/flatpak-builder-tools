@@ -325,6 +325,8 @@ class SpecialSourceProvider:
             )
 
     async def _handle_playwright(self, package: Package) -> None:
+        # FIXME: do something
+        return
         base_url = f'https://github.com/microsoft/playwright/raw/v{package.version}/'
         if SemVer.parse(package.version) >= SemVer.parse('1.16.0'):
             browsers_json_url = base_url + 'packages/playwright-core/browsers.json'

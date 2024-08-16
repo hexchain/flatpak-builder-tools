@@ -34,4 +34,4 @@ class NodeHeaders(NamedTuple):
     @property
     def install_version(self) -> str:
         # FIXME not sure if this static value will always work
-        return '9'
+        return '11'

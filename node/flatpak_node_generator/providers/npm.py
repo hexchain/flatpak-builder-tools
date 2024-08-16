@@ -135,6 +135,8 @@ class NpmLockfileProvider(LockfileProvider):
                         f' (package {install_path} in {lockfile})'
                     )
             else:
+                # FIXME: ignore it
+                continue
                 raise NotImplementedError(
                     f"Don't know how to handle package {install_path} in {lockfile}"
                 )
